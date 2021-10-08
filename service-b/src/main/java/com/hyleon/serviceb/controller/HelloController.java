@@ -1,6 +1,6 @@
-package com.hyleon.servicea.controller;
+package com.hyleon.serviceb.controller;
 
-import com.hyleon.servicea.service.HelloService;
+import com.hyleon.serviceb.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -19,7 +19,7 @@ public class HelloController {
 
     @GetMapping("name/{name}")
     public String sayName(@PathVariable("name") String name) {
-        System.out.println("A.HelloController.sayName");
-        return helloService.callBHello(name);
+        System.out.println("B.HelloController.sayName");
+        return helloService.bHello(name);
     }
 }
