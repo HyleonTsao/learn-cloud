@@ -1,10 +1,10 @@
-package com.hyleon.serviceb;
+package com.hyleon.userservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceBApplicationTests {
+class UserServiceApplicationTests {
 
     @Test
     void contextLoads() {
